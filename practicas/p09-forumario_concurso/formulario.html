@@ -35,23 +35,33 @@
 
     <p>Color <em>(escoge uno)</em>:</p>
       <ul>
-      <li>Rojo</li>
-      <li>Azul</li>
-      <li>Negro</li>
-      <li>Plateado</li>
+      <li><input type="radio" name="color" value="red">Red</li>
+      <li> <input type="radio" name="color" value="azul"> Azul</li>
+      <li> <input type="radio" name="color" value="negro" > Negro</li>
+      <li> <input type="radio" name="color" value="plateado" > Plateado</li>
       </ul>
 
     <p>Características <em>(escoge tantas como quieras)</em>:</p>
       <ul>
-      <li>Cordones brillantes</li>
-      <li>Logo metálico</li>
-      <li>Suela luminosa</li>
-      <li>WiFi integrado</li>
+      <li><input type="checkbox" name="features[]" value="Cordones Brillantes">Cordones brillantes</li>
+      <li>   <input type="checkbox" name="features[]"  value="logo metalico" checked="checked"> Logo metálico</li>
+      <li> <input type="checkbox" name="features[]" value="suela luminosa"> Suela luminosa</li>
+      <li > <input type="checkbox" name="features[]" value="wifi integrado"> WiFi integrado</li>
       </ul>
 
     <p>Talla</p>
     <p>Las medidas reflejan el estándar masculino:</p>
-
+      <select name="size" id=""  size="9" multiple >
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+      </select>
     <p>
       <input type="submit"  value="!Chidos mis Tenis!"> 
       <input type="reset" value="Limpiar" >
